@@ -38,19 +38,13 @@
     cursor: pointer;
 }
 
-.collection--book.collection--preview 
 .collection__grid {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     gap: 2rem;
 }
 
-.collection--authors.collection--preview 
-.collection__grid {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 2rem;
-}
+
 
 .collection__product {
     display: flex;
@@ -63,6 +57,11 @@
 .collection__author {
     text-align: center;
     text-decoration: none;
+}
+
+.collection__publisher {
+    display: block;
+    width: 100%;
 }
 
 .collection__product .collection__image{
@@ -80,6 +79,13 @@
     margin-bottom: 1rem;
     border-radius: 100%;
     background-color: var(--gray-600);
+}
+
+.collection__publisher .collection__image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: scale-down;
+
 }
 
 
@@ -130,23 +136,17 @@
 
 
 @media screen and (max-width: 992px) {
-    .collection--book.collection--preview 
+    
     .collection__grid {
         grid-template-columns: repeat(3,1fr);
     }
-    .collection--authors.collection--preview 
-    .collection__grid {
-        grid-template-columns: repeat(3,1fr);
-    }
+
 }
 
 @media screen and (max-width: 768px) {
-    .collection--book.collection--preview 
+
     .collection__grid {
         grid-template-columns: repeat(2,1fr);
     }
-    .collection--authors.collection--preview 
-    .collection__grid {
-        grid-template-columns: repeat(2,1fr);
-    }
+
 }

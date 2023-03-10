@@ -44,6 +44,7 @@
 .navbar__brand-text {
     color: var(--gray-100);
     font-size: 2rem;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -56,6 +57,7 @@
     align-items: center;
     overflow: hidden;
     border-radius: .5rem;
+    background-color: white;
 }
 
 .navbar__search-input {
@@ -217,3 +219,8 @@
 }
 
 
+@media screen and (max-width: 556px) {
+    .navbar__nav {
+        width: 100%;
+    }
+}

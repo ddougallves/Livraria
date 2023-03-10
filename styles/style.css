@@ -1,7 +1,9 @@
 @import 'navbar.css';
 @import 'dropdown.css';
 @import 'carousel.css';
+@import 'buttons.css';
 @import 'collection.css';
+@import 'footer.css';
 
 * {
     margin: 0;
