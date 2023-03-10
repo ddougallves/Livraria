@@ -11,6 +11,8 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 ::-webkit-scrollbar{
