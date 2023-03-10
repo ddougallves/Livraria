@@ -1,0 +1,147 @@
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown__toggle {
+    background-color: var(--gray-900);
+}
+
+.dropdown__toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer; 
+    background-color: unset;
+}
+
+.dropdown__icon {
+    font-size: 1rem;
+}
+
+.dropdown__toggle-icon {
+    margin-left: auto;
+}
+
+.dropdown__collapse {
+    display: none;
+    position: static;
+    overflow: hidden;
+}
+
+.navbar .dropdown__collapse {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 12rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: .125rem .125rem .5rem rgba(0, 0, 0, 0.123);
+}
+
+.navbar .dropdown--categories .dropdown__collapse {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: calc(100vw - 2rem);
+    max-width: calc(1280px - 2rem);
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: .125rem .125rem .5rem rgba(0, 0, 0, 0.123);
+}
+
+.dropdown__nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    list-style-type: none;
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: white;
+}
+
+.dropdown--categories .dropdown__nav {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.dropdown__item {
+    display: flex;
+    width: 100%;
+}
+
+.dropdown__link {
+    display: block;
+    width: 100%;
+    padding: .75rem;
+    color: var(--gray-900);
+    text-decoration: none;
+}
+
+.dropdown__link:hover {
+    background-color: var(--gray-200);
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .dropdown {
+        position: static;
+    }
+    
+    .navbar .dropdown__toggle {
+        width: 100%;
+        padding: 1rem;
+        color: var(--gray-900);
+        background-color: white;
+    }
+
+    .navbar .dropdown__toggle:hover {
+        background-color: var(--gray-200);
+    }
+
+    .navbar .dropdown--active .dropdown__toggle {
+        background-color: var(--gray-200)
+    }
+
+    .dropdown__nav {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar .dropdown__nav {
+        margin-top: 0;
+    }
+
+    .dropdown--categories .dropdown__nav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dropdown__icon {
+        font-size: 1rem;
+    }
+    
+    .navbar .dropdown__collapse , 
+    .navbar .dropdown--categories .dropdown__collapse {
+        position: static;
+        width: unset;
+        max-width: unset;
+        border-radius: unset;
+        box-shadow: unset;
+    }
+
+    
+    .dropdown__item {
+        width: 100%;
+    }
+
+    .dropdown__link {
+        padding: 1rem;
+    }
+    
+
+}
+

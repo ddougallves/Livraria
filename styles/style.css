@@ -1,0 +1,48 @@
+@import 'navbar.css';
+@import 'dropdown.css';
+@import 'carousel.css';
+@import 'collection.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    user-select: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --gray: #6c757d;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+}
+
+.main {
+    width: 100%;
+    max-width: 1280px;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+}
+
+.divider {
+    padding: 1rem 0;
+}
+
+.divider--2 {
+    padding: 2rem 0;
+}
+
+.divider--4 {
+    padding: 4rem 0;
+}

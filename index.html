@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="body body--home">
+
+    <header class="header header--home">
+
+        <nav class="navbar">
+            <div class="navbar__grid">
+                <button class="navbar__toggle navbar__toggle--nav navbar__toggle--show">
+                    <i class="fa-solid fa-bars navbar__toggle-icon"></i>
+                </button>
+                <div class="navbar__brand">
+                    <a href="" class="navbar__brand-text">Livraria</a>
+                </div>
+                <div class="navbar__search">
+                    <form action="" class="navbar__search-form">
+                        <input type="search" name="" class="navbar__search-input" placeholder="O que você quer ler?">
+                        <button class="navbar__toggle navbar__toggle--search navbar__toggle--show">
+                            <i class="fa-solid fa-magnifying-glass navbar__toggle-icon"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="navbar__profile">
+                    <button class="navbar__toggle navbar__toggle--profile navbar__toggle--show">
+                        <i class="fa-solid fa-circle-user navbar__toggle-icon"></i>
+                    </button>
+                    <div class="navbar__profile-info">
+                        <span class="navbar__profile-title">Bem vindo(a)</span>
+                        <a href="" class="navbar__profile-link">Entre ou cadastre-se</a>
+                    </div>
+                    <button class="navbar__toggle navbar__toggle--cart navbar__toggle--show">
+                        <i class="fa-solid fa-bag-shopping navbar__toggle-icon .navbar__toggle-icon--show"></i>
+                    </button>
+                </div>
+                <ul class="navbar__nav">
+                    <li class="navbar__nav-item navbar__nav-item--toggle">
+                        <button class="navbar__toggle navbar__toggle--nav navbar__toggle--hide">
+                            <i class="fa-solid fa-close navbar__toggle-icon"></i>
+                        </button>
+                    </li>
+                    <li class="navbar__nav-item navbar__nav-item--dropdown">
+                        <div class="dropdown dropdown--categories">
+
+                            <button class="dropdown__toggle">
+                                <i class="fa-solid fa-bars-staggered dropdown__icon"></i>
+                                    Categorias
+                                <i class="fa-solid fa-caret-down dropdown__toggle-icon"></i>
+                            </button>
+                        
+                            <div class="dropdown__collapse">
+                                <ul class="dropdown__nav">
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            Administração, Economia e Negócios
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            Arte, Fotografia e Design
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            Autoajuda e Desenvolvimento Pessoal 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                           Biografias e Histórias Reais 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                           Ciências 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                           Clássicos
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            Contos, Crônicas e Humor
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Direito, Política e Ciências Sociais
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Educação e Didáticos
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Fantasia
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Esportes, Hobbies e Estilo de vida
+                                        </a>                 
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Ficção Científica
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Gastronomia e Culinária 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            História 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Juvenil 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Literatura e ficção 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Poesias e Ensaios 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Policial e Suspense 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Psicologia e Comportamento 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Religião, Espiritualidade e Esoterismo 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Romance
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Saúde
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Tecnologia, Informática e Mídias Digitais
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">       
+                                            Viagem
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="" class="navbar__nav-link">
+                            <i class="fa-solid fa-mobile navbar__nav-icon"></i>
+                            E-books
+                        </a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="" class="navbar__nav-link">
+                            <i class="fa-solid fa-headphones navbar__nav-icon"></i>
+                            Audiobooks
+                        </a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="" class="navbar__nav-link">
+                            <i class="fa-solid fa-book-open navbar__nav-icon"></i>
+                            Livros físicos
+                        </a>
+                    </li>
+                    <li class="navbar__nav-item navbar__nav-item--dropdown">
+                        <div class="dropdown">
+                            
+                            <button class="dropdown__toggle">
+                                <i class="fa-solid fa-layer-group dropdown__icon"></i>
+                                    Páginas
+                                <i class="fa-solid fa-caret-down dropdown__toggle-icon"></i>
+                            </button>
+                        
+                            <div class="dropdown__collapse">
+                                <ul class="dropdown__nav">
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            Dropdown link #01
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            Dropdown link #02
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            Dropdown link #03 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            Dropdown link #04 
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            Dropdown link #05 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="" class="navbar__nav-link">
+                            <i class="fa-solid fa-circle-question navbar__nav-icon"></i>
+                            Perguntas frequentes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <section class="carousel">
+            <div class="carousel__inner">
+                <a href="" class="carousel__link" draggable="false">
+                    <picture class="carousel__picture" draggable="false">
+                        <source media="(min-width: 992px)" srcset="images/carousel-image-01.png" draggable="false" class="carousel__source">
+                        <img src="images/carousel-image-02.png" alt="" draggable="false" class="carousel__image">
+                    </picture>
+                </a>
+                <a href="" class="carousel__link" draggable="false">
+                    <picture class="carousel__picture" draggable="false">
+                        <source media="(min-width: 992px)" srcset="images/carousel-image-03.png" draggable="false" class="carousel__source">
+                        <img src="images/carousel-image-04.png" alt="" draggable="false" class="carousel__image">
+                    </picture>
+                </a>
+                <a href="" class="carousel__link" draggable="false">
+                    <picture class="carousel__picture" draggable="false">
+                        <source media="(min-width: 992px)" srcset="images/carousel-image-05.png" draggable="false" class="carousel__source">
+                        <img src="images/carousel-image-06.png" alt="" draggable="false" class="carousel__image">
+                    </picture>
+                </a>
+            </div>
+            <div class="carousel__indicators"></div>
+            <div class="carousel__controls">
+                <i class="fa-solid fa-angle-left carousel__control-icon carousel__control-icon--prev"></i>
+                <i class="fa-solid fa-angle-right carousel__control-icon carousel__control-icon--next"></i>
+            </div>
+        </section>
+
+        <div class="divider--2"></div>
+
+        <section class="collection collection--book collection--preview">
+            <header class="collection__header">
+                <h2 class="collection__title">Destaques</h2>
+                <button class="collection__button">Ver tudo</button>
+            </header>
+            <div class="collection__grid">
+                <a href="" class="collection__product">
+                    <div class="collection__header">
+                        <img src="images/book.png" alt="" class="collection__image">
+                        <h3 class="collection__title">Lorem ipsum</h3>
+                        <p class="collection__author">lorem ipsum</p>
+                    </div>
+                    <div class="collection__price">
+                        <span class="collection__badge">Promoção</span>
+                        <span class="collection__price-old">R$00,00</span>
+                        <span class="collection__price-regular">R$00,00</span>
+                    </div>
+                </a>
+                <a href="" class="collection__product">
+                    <div class="collection__header">
+                        <img src="images/book.png" alt="" class="collection__image">
+                        <h3 class="collection__title">Lorem ipsum</h3>
+                        <p class="collection__author">lorem ipsum</p>
+                    </div>
+                    <div class="collection__price">
+                        <span class="collection__badge">Promoção</span>
+                        <span class="collection__price-old">R$00,00</span>
+                        <span class="collection__price-regular">R$00,00</span>
+                    </div>
+                </a>
+                <a href="" class="collection__product">
+                    <div class="collection__header">
+                        <img src="images/book.png" alt="" class="collection__image">
+                        <h3 class="collection__title">Lorem ipsum</h3>
+                        <p class="collection__author">lorem ipsum</p>
+                    </div>
+                    <div class="collection__price">
+                        <span class="collection__price-regular">R$00,00</span>
+                    </div>
+                </a>
+                <a href="" class="collection__product">
+                    <div class="collection__header">
+                        <img src="images/book.png" alt="" class="collection__image">
+                        <h3 class="collection__title">Lorem ipsum</h3>
+                        <p class="collection__author">lorem ipsum</p>
+                    </div>
+                    <div class="collection__price">
+                        <span class="collection__badge">Promoção</span>
+                        <span class="collection__price-old">R$00,00</span>
+                        <span class="collection__price-regular">R$00,00</span>
+                    </div>
+                </a>
+                <a href="" class="collection__product">
+                    <div class="collection__header">
+                        <img src="images/book.png" alt="" class="collection__image">
+                        <h3 class="collection__title">Lorem ipsum</h3>
+                        <p class="collection__author">lorem ipsum</p>
+                    </div>
+                    <div class="collection__price">
+                        <span class="collection__price-regular">R$00,00</span>
+                    </div>
+                </a>
+                <a href="" class="collection__product">
+                    <div class="collection__header">
+                        <img src="images/book.png" alt="" class="collection__image">
+                        <h3 class="collection__title">Lorem ipsum</h3>
+                        <p class="collection__author">lorem ipsum</p>
+                    </div>
+                    <div class="collection__price">
+                        <span class="collection__badge">Promoção</span>
+                        <span class="collection__price-old">R$00,00</span>
+                        <span class="collection__price-regular">R$00,00</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <div class="divider--2"></div>
+        
+        <section class="collection collection--authors collection--preview">
+            <header class="collection__header">
+                <h2 class="collection__title">Navegue por autores</h2>
+                <button class="collection__button">Ver tudo</button>
+            </header>
+            <div class="collection__grid">
+                <a href="" class="collection__author">
+                    <img src="images/author-image.png" alt="" class="collection__image">
+                    <p class="collection__text">coleção</p>
+                    <h2 class="collection__title">Lorem ipsum</h2>
+                </a>
+                <a href="" class="collection__author">
+                    <img src="images/author-image.png" alt="" class="collection__image">
+                    <p class="collection__text">coleção</p>
+                    <h2 class="collection__title">Lorem ipsum</h2>
+                </a>
+                <a href="" class="collection__author">
+                    <img src="images/author-image.png" alt="" class="collection__image">
+                    <p class="collection__text">coleção</p>
+                    <h2 class="collection__title">Lorem ipsum</h2>
+                </a>
+                <a href="" class="collection__author">
+                    <img src="images/author-image.png" alt="" class="collection__image">
+                    <p class="collection__text">coleção</p>
+                    <h2 class="collection__title">Lorem ipsum</h2>
+                </a>
+                <a href="" class="collection__author">
+                    <img src="images/author-image.png" alt="" class="collection__image">
+                    <p class="collection__text">coleção</p>
+                    <h2 class="collection__title">Lorem ipsum</h2>
+                </a>
+                <a href="" class="collection__author">
+                    <img src="images/author-image.png" alt="" class="collection__image">
+                    <p class="collection__text">coleção</p>
+                    <h2 class="collection__title">Lorem ipsum</h2>
+                </a>
+            </div>
+        </section>
+       
+       
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/987be7f00b.js" crossorigin="anonymous"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/carousel.js"></script>
+
+</body>
+</html>
