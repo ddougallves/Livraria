@@ -19,7 +19,10 @@
 }
 
 .dropdown__icon {
+    display: flex;
+    width: 1.5rem;
     font-size: 1rem;
+    text-align: center;
 }
 
 .dropdown__toggle-icon {
