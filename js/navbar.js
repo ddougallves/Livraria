@@ -15,9 +15,19 @@ function navbar() {
     }) 
 
     let cart = ()=>{
+
         const offCanvas = document.querySelector('.cart--offcanvas');
         const show = document.querySelector('.navbar__toggle--cart.navbar__toggle--show')
         const hide = document.querySelector('.cart__toggle.cart__toggle--hide');
+
+        let trash = document.querySelectorAll('.cart__toggle.cart__toggle--trash');
+
+        trash.forEach(item=>{
+            item.addEventListener('click',e=>{
+                e.preventDefault();
+                item.parentNode.remove();
+            })
+        })
 
         show.addEventListener('click',()=>{
             offCanvas.style.left = '0';
@@ -26,6 +36,8 @@ function navbar() {
         hide.addEventListener('click',()=>{
             offCanvas.style.left = '-100%';
         })
+
+
 
     }
 

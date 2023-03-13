@@ -84,7 +84,7 @@
         })
     })
 
-    checkLoop('start');
+    
 
     arrowNext.addEventListener('click',()=>{
         if(carousel.classList.contains('carousel--active'))return;
@@ -116,10 +116,14 @@
         checkLoop('start');
     })
 
+    checkLoop('start')
+
     function checkLoop(value){
+
         switch(value){
             case 'start':
                 loop =  setInterval(()=>{
+                            checkIndex();
                             switchSlide('next',1)
                         },5000)
                 break;
@@ -229,9 +233,9 @@
                 break;
         }
 
-        indicatorsArea.querySelector('.carousel__indicator-item--active').classList.remove('carousel__indicator-item--active')
-        indicatorsArea.querySelectorAll('.carousel__indicator-item')[activeSlide].classList.add('carousel__indicator-item--active')
- 
+        indicatorsArea.querySelector('.carousel__indicator-item--active').classList.remove('carousel__indicator-item--active');
+        indicatorsArea.querySelectorAll('.carousel__indicator-item')[activeSlide].classList.add('carousel__indicator-item--active');
+
     }
 
 
