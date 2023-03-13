@@ -1,0 +1,145 @@
+
+.cart--offcanvas {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 32rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    overflow-y: scroll;
+    padding: 3rem 1rem;
+    background-color: white;
+    box-shadow: .125rem .125rem .5rem rgba(0, 0, 0, 0.123);
+    transition: left ease-out 100ms;
+}
+
+.cart__product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cart__product {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.cart__image {
+    width: 100%;
+    max-width: 6rem;
+    aspect-ratio: 9/13;
+    border-radius: .75rem;
+    background-color: var(--gray-600);
+    object-fit: scale-down;
+}
+
+.cart--offcanvas .cart__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart__product .cart__header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.cart__title {
+    color: var(--gray-900);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cart__product .cart__title {
+    color: var(--gray-900);
+}
+
+.cart__product .cart__author {
+    color: var(--gray-600);
+    font-size: 1.25rem;
+}
+
+.cart__product .cart__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart__price {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.cart__badge {
+    color: white;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    border-radius: .125rem;
+    background-color: var(--gray-800);
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.cart__price-old {
+    display: block;
+    color: var(--gray-800);
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.cart__price-regular {
+    display: block;
+    color: var(--gray-900);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cart__toggle {
+    width: 2rem;
+    height: 2.5rem;
+    border: none;
+    background-color: unset;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cart__product .cart__toggle {
+    margin-left: auto;
+    font-size: 1.25rem;
+}
+
+.modal__cta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: auto;
+}
+
+.modal__cta .button {
+    width: 100%;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .cart--offcanvas {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:556px) {
+
+    .modal__cta {
+        flex-direction: column;
+    }
+    
+}
